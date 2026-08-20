@@ -201,28 +201,81 @@ body{font-family:'DM Sans',sans-serif;background:#FAF8F4;color:#0F0E0C;line-heig
 
 /* ── RESPONSIVE ──────────────── */
 @media(max-width:920px){
+  /* ── NAV ── */
   .nav-links,.nav-auth-wrap{display:none;}
   .nav-hamburger{display:flex;}
   .site-nav{padding:0 20px;}
-  
-  
-  
-  
-  .verdict-inner,.dual-inner{padding:32px 20px 40px;grid-template-columns:1fr;gap:28px;}
+  .nav-logo-wrap svg{height:38px !important;}
+
+  /* ── LAYOUT ── */
+  .w{padding:0 20px;}
+
+  /* ── OPENER ── */
+  .at-opener{padding:48px 0 32px;}
+  .progress-track{padding:0 20px;}
+  .filter-area{padding:0 0 56px;}
+
+  /* ── OPTION CARDS ── */
+  #step-1 .option-grid{grid-template-columns:1fr 1fr;max-width:100%;}
+  #step-2 .option-grid{grid-template-columns:1fr;max-width:100%;}
+  #step-3 .option-grid{grid-template-columns:1fr 1fr;max-width:100%;}
+  .option-card{padding:16px 18px;}
+  .option-label{font-size:14px;}
+
+  /* ── VERDICT BAND ── */
+  .verdict-inner{padding:32px 20px 40px;grid-template-columns:1fr;gap:28px;}
+  .result-actions{flex-direction:column;}
+  .result-actions .btn-teal,.result-actions .btn-outline{flex:none;width:100%;}
+
+  /* ── ABOUT BAND ── */
+  .about-band{padding:40px 0;}
   .about-grid{grid-template-columns:1fr;gap:32px;}
-  .levels-grid{grid-template-columns:1fr;}
+
+  /* ── LEVELS BAND ── */
+  .levels-band{padding:40px 0;}
+  .levels-grid{grid-template-columns:1fr 1fr;}
+
+  /* ── DOMAINS BAND ── */
+  .domains-band{padding:40px 0 52px;}
   .domains-grid-3{grid-template-columns:1fr 1fr;}
   .domains-grid-2{grid-template-columns:1fr;}
+
+  /* ── DUAL CARDS ── */
+  .dual-inner{padding:32px 20px 40px;}
   .dual-cards{grid-template-columns:1fr;}
-  .dual-actions,.result-actions{flex-direction:column;}
+  .dual-actions{flex-direction:column;}
+  .dual-actions .btn-teal,.dual-actions .btn-outline{width:100%;}
+
+  /* ── BAND PADDING ── */
   .about-band,.levels-band,.domains-band{padding-left:0;padding-right:0;}
   .about-band .w,.levels-band .w,.domains-band .w{padding-left:20px;padding-right:20px;}
-  .site-footer{padding:24px 20px;flex-direction:column;align-items:flex-start;}
+
+  /* ── FOOTER ── */
+  .site-footer{padding:24px 20px;flex-direction:column;align-items:flex-start;gap:8px;}
 }
+
 @media(max-width:640px){
+  /* ── OPTION CARDS — single column ── */
   #step-1 .option-grid,#step-2 .option-grid,#step-3 .option-grid{grid-template-columns:1fr;}
-  .domains-grid-3{grid-template-columns:1fr;}
-  .result-headline{font-size:24px;}
+
+  /* ── DOMAINS ── */
+  .domains-grid-3,.domains-grid-2{grid-template-columns:1fr;}
+
+  /* ── TYPOGRAPHY ── */
+  .result-headline{font-size:22px;}
+  .filter-q{font-size:20px;margin-bottom:24px;}
+
+  /* ── LEVELS ── */
+  .levels-grid{grid-template-columns:1fr;}
+  .level-card{padding:20px;}
+
+  /* ── BUTTONS — min tap target ── */
+  .btn-teal,.btn-outline{min-height:44px;padding:13px 18px;}
+  .option-card{min-height:60px;}
+
+  /* ── VERDICT CHIPS ── */
+  .result-chips{gap:6px;}
+  .chip{font-size:8px;padding:4px 10px;}
 }
 
 /* ── DOMAIN CELLS — high contrast on deep teal ── */
